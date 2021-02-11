@@ -1,0 +1,2 @@
+rootProject.name='unsplashPhotoLoader'
+include ':app'

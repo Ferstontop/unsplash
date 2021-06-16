@@ -20,7 +20,7 @@ import kotlin.collections.Collection
 
 class CollectionPhotoActivity:AppCompatActivity() {
 
-    private  var collectionId:Int = 0
+    private lateinit var collectionId:String
     private lateinit var recyclerViewPhoto: RecyclerView
     private lateinit var photoAdapter: PhotoAdapter
 
@@ -41,8 +41,8 @@ class CollectionPhotoActivity:AppCompatActivity() {
         recyclerViewPhoto.adapter = photoAdapter
 
         var intent:Intent = getIntent()
-        collectionId = intent.getIntExtra("id",1)
-        Log.d("collectionId", collectionId.toString())
+        collectionId = intent.getStringExtra("id",)
+        Log.d("collectionId", collectionId)
 
         parseJson(page)
 

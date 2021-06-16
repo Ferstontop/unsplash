@@ -21,7 +21,7 @@ data class Urls(
 
 data class CollectionsApi (
 
-    var id:Int?,
+    var id:String?,
     var title:String?
 
 )

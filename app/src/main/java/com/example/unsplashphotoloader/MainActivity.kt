@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                             val title = items[i].title ?: "N/A"
                             Log.d("title", title)
 
-                            val modelCollection = Collection(id as Int, title)
+                            val modelCollection = Collection(id, title)
 
                             collection.add(modelCollection)
 

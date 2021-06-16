@@ -23,7 +23,7 @@ interface PhotoService {
     @Headers("Accept-Version: v1", "Authorization: Client-ID $CLIENT_ID")
     @GET("/collections/{id}/photos")
     suspend fun getCollectionsPhoto(
-        @Path("id") id: Int,
+        @Path("id") id: String,
         @Query("page") page:Int):Response<List<PhotoApi>>
 
     @Headers("Accept-Version: v1", "Authorization: Client-ID $CLIENT_ID")
